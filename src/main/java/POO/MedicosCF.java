@@ -176,7 +176,7 @@ public class MedicosCF extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        lista.add(MedicosCF(
+        lista.add(new MedicosCF(
               txtEspecialidad.getText(), 
               txtAnioExperiencia.getText(),
               txtNombre.getText(), 
@@ -189,7 +189,7 @@ public class MedicosCF extends javax.swing.JFrame {
     private void bntMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntMostrarActionPerformed
         for(MedicosCF item : lista ){
         System.out.println("Expecialidad: " + item.getExperiencia));
-        
+        System.out.println("e");
     }
 
 // TODO add your handling code here:

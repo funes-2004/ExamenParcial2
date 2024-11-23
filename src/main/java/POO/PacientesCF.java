@@ -38,8 +38,6 @@ public class PacientesCF extends javax.swing.JFrame {
 
         jLabel1.setText("formulario de pacientes");
 
-        jLabel2.setText("jLabel2");
-
         jLabel3.setText("jLabel3");
 
         jLabel4.setText("jLabel4");
@@ -93,7 +91,7 @@ public class PacientesCF extends javax.swing.JFrame {
                 .addComponent(jLabel5)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6)
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
 
         pack();
