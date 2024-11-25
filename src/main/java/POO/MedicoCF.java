@@ -12,7 +12,7 @@ public class MedicoCF  extends superClaseCF {
     private  String EspecialidadCF; 
     private int aniosExperienciaCF;
 
-    public MedicoCF(String EspecialidadCF, int aniosExperienciaCF, String NombreCF, int EdadCF, String DireccionCF) {
+    public MedicoCF(String EspecialidadCF, int aniosExperienciaCF, String NombreCF, String EdadCF, String DireccionCF) {
         super(NombreCF, EdadCF, DireccionCF);
         this.EspecialidadCF = EspecialidadCF;
         this.aniosExperienciaCF = aniosExperienciaCF;
@@ -34,6 +34,5 @@ public class MedicoCF  extends superClaseCF {
         this.aniosExperienciaCF = aniosExperienciaCF;
     }
 
-    
-    
+   
 }

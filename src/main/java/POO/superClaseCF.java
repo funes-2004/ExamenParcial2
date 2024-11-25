@@ -10,10 +10,10 @@ package POO;
  */
 public class superClaseCF {
     private  String NombreCF;
-    private int EdadCF; 
+    private String EdadCF; 
     private String DireccionCF;
 
-    public superClaseCF(String NombreCF, int EdadCF, String DireccionCF) {
+    public superClaseCF(String NombreCF, String EdadCF, String DireccionCF) {
         this.NombreCF = NombreCF;
         this.EdadCF = EdadCF;
         this.DireccionCF = DireccionCF;
@@ -27,11 +27,11 @@ public class superClaseCF {
         this.NombreCF = NombreCF;
     }
 
-    public int getEdadCF() {
+    public String getEdadCF() {
         return EdadCF;
     }
 
-    public void setEdadCF(int EdadCF) {
+    public void setEdadCF(String EdadCF) {
         this.EdadCF = EdadCF;
     }
 
@@ -42,9 +42,8 @@ public class superClaseCF {
     public void setDireccionCF(String DireccionCF) {
         this.DireccionCF = DireccionCF;
     }
-    
-    
 
+   
    
     
     

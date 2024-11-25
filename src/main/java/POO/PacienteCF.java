@@ -9,20 +9,20 @@ package POO;
  * @author Dell 5421
  */
 public class PacienteCF extends superClaseCF {
-    private int NroHistorialCF;
+    private String NroHistorialCF;
     private  String EnfermedaCF; 
 
-    public PacienteCF(int NroHistorialCF, String EnfermedaCF, String NombreCF, int EdadCF, String DireccionCF) {
+    public PacienteCF(String NroHistorialCF, String EnfermedaCF, String NombreCF, String EdadCF, String DireccionCF) {
         super(NombreCF, EdadCF, DireccionCF);
         this.NroHistorialCF = NroHistorialCF;
         this.EnfermedaCF = EnfermedaCF;
     }
 
-    public int getNroHistorialCF() {
+    public String getNroHistorialCF() {
         return NroHistorialCF;
     }
 
-    public void setNroHistorialCF(int NroHistorialCF) {
+    public void setNroHistorialCF(String NroHistorialCF) {
         this.NroHistorialCF = NroHistorialCF;
     }
 
@@ -34,7 +34,7 @@ public class PacienteCF extends superClaseCF {
         this.EnfermedaCF = EnfermedaCF;
     }
 
-    
+  
     
     
 }

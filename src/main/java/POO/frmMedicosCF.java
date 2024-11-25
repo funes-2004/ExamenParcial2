@@ -11,12 +11,12 @@ import java.util.List;
  *
  * @author Dell 5421
  */
-public class MedicosCF extends javax.swing.JFrame {
-    List<MedicosCF> lista = new ArrayList<>();
+public class frmMedicosCF extends javax.swing.JFrame {
+    List<frmMedicosCF> lista = new ArrayList<>();
     /**
      * Creates new form MedicosCF
      */
-    public MedicosCF() {
+    public frmMedicosCF() {
         initComponents();
     }
 
@@ -42,7 +42,7 @@ public class MedicosCF extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         btnAceptar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
-        bntMostrar = new javax.swing.JButton();
+        btnMostrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,34 +64,30 @@ public class MedicosCF extends javax.swing.JFrame {
 
         jLabel6.setText("ANIOEXPERIENCIA ");
 
-        btnAceptar.setText("Aceptar ");
-        btnAceptar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAceptarActionPerformed(evt);
-            }
-        });
+        btnAceptar.setText("Aceptar");
 
         btnCancelar.setText("Cancelar");
-        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCancelarActionPerformed(evt);
-            }
-        });
 
-        bntMostrar.setText("Mostrar");
-        bntMostrar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bntMostrarActionPerformed(evt);
-            }
-        });
+        btnMostrar.setText("Mostrar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(132, 132, 132)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
                 .addGap(43, 43, 43)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnAceptar)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnCancelar)
+                        .addGap(31, 31, 31)
+                        .addComponent(btnMostrar)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)
                         .addGap(171, 171, 171))
@@ -114,22 +110,7 @@ public class MedicosCF extends javax.swing.JFrame {
                                 .addComponent(jLabel6)
                                 .addGap(24, 24, 24)
                                 .addComponent(txtAnioExperiencia)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCancelar)
-                        .addGap(49, 49, 49)
-                        .addComponent(bntMostrar)
-                        .addGap(36, 36, 36))))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(132, 132, 132)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(btnAceptar)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,12 +137,12 @@ public class MedicosCF extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtAnioExperiencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAceptar, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnAceptar)
                     .addComponent(btnCancelar)
-                    .addComponent(bntMostrar))
-                .addContainerGap(21, Short.MAX_VALUE))
+                    .addComponent(btnMostrar))
+                .addGap(25, 25, 25))
         );
 
         pack();
@@ -170,30 +151,6 @@ public class MedicosCF extends javax.swing.JFrame {
     private void txtDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDireccionActionPerformed
-
-    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnCancelarActionPerformed
-
-    private void btnAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAceptarActionPerformed
-        lista.add(new MedicosCF(
-              txtEspecialidad.getText(), 
-              txtAnioExperiencia.getText(),
-              txtNombre.getText(), 
-              txtEdad.getText(),
-              txtDireccion.getText()
-        ));       
-// TODO add your handling code here:
-    }//GEN-LAST:event_btnAceptarActionPerformed
-
-    private void bntMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bntMostrarActionPerformed
-        for(MedicosCF item : lista ){
-        System.out.println("Expecialidad: " + item.getExperiencia));
-        System.out.println("e");
-    }
-
-// TODO add your handling code here:
-    }//GEN-LAST:event_bntMostrarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -212,28 +169,29 @@ public class MedicosCF extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmMedicosCF.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MedicosCF().setVisible(true);
+                new frmMedicosCF().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bntMostrar;
     private javax.swing.JButton btnAceptar;
     private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnMostrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
